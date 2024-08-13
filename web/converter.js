@@ -58,7 +58,7 @@ function handleJsonDisplay() {
             }
         } catch (e) {
             // If parsing fails, show an error message but still display the raw text
-            jsonOutputBox.value += `Invalid JSON or not a JSON format. Check the raw Output box...;'\n\n`;
+            jsonOutputBox.value += `Encountered an Error while Processing an Invalid Json Object or not at all a Json format. Possibly Check the raw Output box.\n`;
         }
     });
 }
