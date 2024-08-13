@@ -21,15 +21,11 @@ Alternatively, you can run the tool the old school way by gathering web/converte
 ### Features
 - **UnSoup**: Converts your raw CanvasContent1 JSON into a readable and formatted version.
 - **reSoup**: Minifies and converts your edited JSON back to its original format for use in API calls.
+- **JsonPreview & Editor**: Preview and edit your JSON in a nice and clean way, directly in the browser. Resize the textareas to make them bigger or smaller.
 
 ### How to Use
-1. Enter your CanvasContent1 Soup in the first textarea.
-2. Click the **"UnSoup"** button to decode and format the JSON.
-3. Copy the output to VS Code and format it using Prettier (`Ctrl+A, Ctrl+K, Ctrl+F`).
-4. Edit your JSON in VS Code as needed.
-5. Copy the formatted, edited JSON back into the second textarea.
-6. Click the **"reSoup"** button to minify and convert it back to its original format.
-7. Use the minified JSON in your API call.
+refer to the latest instructions on the webApp itself:
+- [https://soup.jlangisch.de](https://soup.jlangisch.de)
 
 ## License
 
