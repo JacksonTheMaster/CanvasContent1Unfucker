@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CanvasContent1 unFucker</title>
+    <meta name="description" content="Decode and reformat SharePoint CanvasContent1 JSON data with this tool. UnSoup and reCook your CanvasContent1 data to make it readable and editable.">
+    <meta name="keywords" content="SharePoint, CanvasContent1, JSON, Converter, UnSoup, reCook, Microsoft, SharePoint API">
+    <meta name="author" content="JMG IT">
+    <style>
+        body {
+            font-family: 'Comic Sans MS', 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+            color: #333;
+            position: relative;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #ff6b6b;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        h2 {
+            font-size: 1.5em;
+            margin-top: 30px;
+            color: #ff6b6b;
+        }
+        ol {
+            text-align: left;
+            margin-top: 10px;
+            background: #ffe3e3;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        textarea {
+            width: 80%;
+            height: 150px;
+            margin: 10px 0;
+            font-size: 16px;
+            padding: 10px;
+            border: 2px solid #ff6b6b;
+            border-radius: 10px;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+            background: #fff;
+            color: #333;
+        }
+        textarea#jsonOutput {
+            height: 200px;
+            background: #f9e5e5;
+            color: #333;
+        }
+        button {
+            margin: 5px;
+            padding: 12px 24px;
+            font-size: 18px;
+            border: none;
+            border-radius: 30px;
+            background: #ff6b6b;
+            color: #fff;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        button:hover {
+            transform: scale(1.1);
+        }
+        div.buttons {
+            display: flex;
+            justify-content: center;
+        }
+        footer {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #666;
+            text-align: center;
+        }
+        footer a {
+            color: #ff6b6b;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        .question-mark {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 24px;
+            cursor: pointer;
+            color: #ff6b6b;
+        }
+        .tooltip {
+            visibility: hidden;
+            width: 300px;
+            background-color: #333;
+            color: #fff;
+            text-align: left;
+            border-radius: 5px;
+            padding: 10px;
+            position: absolute;
+            top: 50px;
+            right: 20px;
+            z-index: 1;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+            font-size: 14px;
+        }
+        .question-mark:hover .tooltip {
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>SharePoint CanvasContent1 Soup Converter</h1>
+
+    <textarea id="inputText" placeholder="Enter your CanvasContent1 Soup here..."></textarea>
+
+    <div class="buttons">
+        <button onclick="convertToClean()">UnSoup</button>
+        <button onclick="convertToRaw()">reSoup</button>
+    </div>
+
+    <textarea id="outputText" placeholder="Un-Souped output or formatted text goes here. We'll minify it back into Soup."></textarea>
+
+    <textarea id="jsonOutput" placeholder="JSON Soup served hot..."></textarea>
+
+    <footer>
+        <a href="https://jmg-it.de" target="_blank">JMG IT</a> - Serving piping hot Microsoft Soup, just the way you like it!
+    </footer>
+
+    <h2>How to Use</h2>
+    <ol>
+        <li>Enter your CanvasContent1 Soup in the first box.</li>
+        <li>Click "UnSoup" to decode and format the JSON.</li>
+        <li>Copy the output to VS Code, and format it using Prettier (<code>Ctrl+A, Ctrl+K, Ctrl+F</code>).</li>
+        <li>Edit your JSON in VS Code as needed.</li>
+        <li>Copy the formatted, edited JSON back into the second box.</li>
+        <li>Click "reSoup" to minify and convert it back to its original format.</li>
+        <li>Use the minified JSON in your API call.</li>
+    </ol>
+
+    <div class="question-mark">
+        ?
+        <div class="tooltip">
+            Scroll down for "how to use". Frustrated with wading through Microsoft's complex and messy nested JSON structures in SharePoint APIs, I created this tool to simplify the process. The SharePoint CanvasContent1 Unfucker was born out of the need to make these JSON soups more readable and easier to work with. Enjoy your soup, served just the way you like it! Sorry for Comic Sans, but I had to.<br><br>
+            You can manually decode your soup by replacing all occurrences of <code>\\\</code> with a temporary marker, then replacing all occurrences of <code>\"</code> with <code>"</code>, and finally replacing the temporary marker back to <code>\</code>. To reverse the process, simply follow these steps in reverse order.
+        </div>
+    </div>
+
+    <script src="converter.js"></script>
+    
+</body>
+</html>
