@@ -28,7 +28,7 @@ function convertToRaw() {
                             .replace(/###QUOTE###/g, "\\\\");
 
     // Minify the raw text by removing spaces but not single spaces, tabs, newlines, and line breaks
-    rawText = rawText.replace(/[\s]{2,}/g, "");
+    rawText = rawText.replace(/[\t\r\n]+/g, "").replace(/\s{2,}/g, " ");
 
     // Display the raw text back in the input box
     document.getElementById('inputText').value = rawText;
