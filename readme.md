@@ -1,5 +1,7 @@
 # SharePoint CanvasContent1 Soup Converter
 
+## According to #1, this tool does not work with the current CanvasContent1 anymore. Be warned, but feel free to edit it to your liking
+
 ## Overview
 
 The SharePoint CanvasContent1 Soup Converter is a tool designed to help developers and administrators who work with SharePoint's CanvasContent1 JSON data. This data can often be complex, nested, HTML, and difficult to read or edit. The tool allows you to decode and reformat this JSON data, making it easier to manage, edit, and re-integrate back into your workflows. It's meant to be used by copying a CanvasContent1 soup from a recored or somehow else retrieved http call to the Sharepooint API into the first text box. The SharePoint CanvasContent1 Soup Converter will then decode your JSON so it can be sorted using a code formatter like Prettier and then edited as needed without wanting to shoot yourself in the foot editing a single line of Json, fucked with 6000 Backslashes. After this editing is done, the tool can re-encode your JSON back into its original format for use in API calls, reSouping your nicely formatted JSON back into a CanvasContent1 soup. Yay!
