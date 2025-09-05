@@ -1,6 +1,6 @@
 # SharePoint CanvasContent1 Soup Converter
 
-## According to #1, this tool does not work with the current CanvasContent1 anymore. Be warned, but feel free to edit it to your liking
+## According to issue #1, this tool does not work with the current CanvasContent1 anymore. Be warned, but feel free to edit it to your liking. 
 
 ## Overview
 
